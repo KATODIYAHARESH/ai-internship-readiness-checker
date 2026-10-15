@@ -1,0 +1,472 @@
+{
+  "roles": {
+    "Data Analyst": {
+      "description": "Turns raw data into decisions using SQL, spreadsheets, statistics and dashboards.",
+      "required": ["Python", "SQL", "Excel", "Statistics", "Pandas", "Data Visualization", "BI Tools"],
+      "preferred": ["Data Cleaning", "A/B Testing", "Machine Learning", "Git"]
+    },
+    "ML Engineer": {
+      "description": "Builds, trains and ships machine-learning models and the pipelines around them.",
+      "required": ["Python", "Machine Learning", "Deep Learning", "NumPy", "Pandas", "Scikit-learn", "Statistics", "Git"],
+      "preferred": ["PyTorch", "TensorFlow", "NLP", "Docker", "MLOps", "SQL"]
+    },
+    "Web Developer": {
+      "description": "Designs and builds responsive, accessible user interfaces and the APIs they consume.",
+      "required": ["HTML", "CSS", "JavaScript", "React", "Git", "REST APIs", "Responsive Design"],
+      "preferred": ["TypeScript", "Node.js", "Tailwind CSS", "Testing", "Figma", "SQL"]
+    },
+    "Backend Developer": {
+      "description": "Designs services, databases and APIs that power products reliably at scale.",
+      "required": ["Python", "SQL", "PostgreSQL", "REST APIs", "Git", "Data Structures", "Linux"],
+      "preferred": ["Docker", "Redis", "Microservices", "Cloud", "Testing", "Node.js"]
+    }
+  },
+  "skills": {
+    "Python": {
+      "aliases": ["python", "python3"],
+      "hours": 40,
+      "steps": [
+        "Complete a free beginner-to-intermediate course (e.g. 'Python for Everybody' or Kaggle Learn: Python).",
+        "Solve 30 easy/medium problems on LeetCode or HackerRank using idiomatic Python.",
+        "Package one script as a small CLI tool with argparse and push it to GitHub."
+      ],
+      "project": "Command-line expense tracker that stores data in a CSV/SQLite file."
+    },
+    "SQL": {
+      "aliases": ["sql", "mysql", "sqlite", "t-sql", "sql server", "postgresql queries"],
+      "hours": 25,
+      "steps": [
+        "Work through Mode SQL Tutorial or SQLBolt (SELECT, JOIN, GROUP BY, window functions).",
+        "Solve 25 SQL problems on LeetCode/HackerRank (aim for 10 JOIN + 5 window-function questions).",
+        "Load a public dataset into SQLite/PostgreSQL and answer 10 business questions with queries."
+      ],
+      "project": "Sales analytics database with 10 documented business queries."
+    },
+    "Excel": {
+      "aliases": ["excel", "microsoft excel", "ms excel", "spreadsheets", "google sheets", "pivot table", "pivot tables", "vlookup"],
+      "hours": 12,
+      "steps": [
+        "Learn VLOOKUP/XLOOKUP, pivot tables, conditional formatting and charts (Microsoft Learn is free).",
+        "Rebuild a messy public dataset into a clean workbook with a pivot-driven summary sheet.",
+        "Add named ranges and data validation so a non-technical user can reuse the workbook."
+      ],
+      "project": "Personal finance or campus-event budget dashboard in Excel."
+    },
+    "Statistics": {
+      "aliases": ["statistics", "statistical analysis", "hypothesis testing", "probability", "regression analysis", "statistical modelling", "statistical modeling"],
+      "hours": 30,
+      "steps": [
+        "Study descriptive stats, distributions, confidence intervals and hypothesis tests (Khan Academy / StatQuest).",
+        "Reproduce a t-test, chi-square test and linear regression in Python (scipy / statsmodels).",
+        "Write a one-page analysis that states a hypothesis, test, p-value and plain-English conclusion."
+      ],
+      "project": "Statistical analysis of a public survey dataset with written conclusions."
+    },
+    "Pandas": {
+      "aliases": ["pandas", "dataframe", "dataframes"],
+      "hours": 20,
+      "steps": [
+        "Finish Kaggle Learn: Pandas (indexing, groupby, merge, reshaping).",
+        "Clean a messy CSV: handle nulls, duplicates, dtypes and outliers.",
+        "Publish the notebook on GitHub with a short README of your findings."
+      ],
+      "project": "Exploratory data analysis notebook on a Kaggle dataset."
+    },
+    "Data Visualization": {
+      "aliases": ["data visualization", "data visualisation", "matplotlib", "seaborn", "plotly", "data viz", "visualization", "d3.js"],
+      "hours": 15,
+      "steps": [
+        "Learn chart-selection rules (e.g. 'Storytelling with Data' summaries) and avoid chart junk.",
+        "Recreate 5 charts in matplotlib/seaborn/plotly from a public dataset.",
+        "Turn the best chart into a one-slide insight with a title that states the takeaway."
+      ],
+      "project": "Interactive plotly dashboard summarising a public dataset."
+    },
+    "BI Tools": {
+      "aliases": ["power bi", "powerbi", "tableau", "looker", "qlik", "metabase", "business intelligence", "bi tools"],
+      "hours": 20,
+      "steps": [
+        "Install Power BI Desktop or Tableau Public (both free) and complete the official beginner path.",
+        "Build a 3-page dashboard with filters, KPIs and drill-through on a public dataset.",
+        "Publish it (Tableau Public / Power BI screenshots) and link it from your resume."
+      ],
+      "project": "Executive sales dashboard with KPIs, trends and region drill-down."
+    },
+    "Data Cleaning": {
+      "aliases": ["data cleaning", "data cleansing", "data wrangling", "data preprocessing", "data pre-processing", "etl"],
+      "hours": 10,
+      "steps": [
+        "Learn common issues: missing values, duplicates, inconsistent formats, outliers.",
+        "Clean a deliberately messy dataset and log every transformation you applied.",
+        "Add automated validation checks (row counts, null thresholds) to the script."
+      ],
+      "project": "Reusable cleaning pipeline with before/after quality report."
+    },
+    "A/B Testing": {
+      "aliases": ["a/b testing", "ab testing", "a/b test", "experiment design", "split testing"],
+      "hours": 10,
+      "steps": [
+        "Read a primer on A/B testing (sample size, significance, power, novelty effect).",
+        "Simulate an experiment in Python and compute lift, p-value and confidence interval.",
+        "Write a go / no-go recommendation memo from the simulated results."
+      ],
+      "project": "Simulated checkout-page A/B test with a decision memo."
+    },
+    "Machine Learning": {
+      "aliases": ["machine learning", "ml", "supervised learning", "unsupervised learning", "predictive modelling", "predictive modeling"],
+      "hours": 50,
+      "steps": [
+        "Complete Andrew Ng's Machine Learning Specialization (audit for free) or Kaggle 'Intro to ML'.",
+        "Enter one Kaggle Getting-Started competition (Titanic / House Prices) and iterate on features.",
+        "Document the model, metrics and error analysis in a GitHub README."
+      ],
+      "project": "End-to-end ML project: data, features, model comparison, evaluation report."
+    },
+    "Deep Learning": {
+      "aliases": ["deep learning", "neural network", "neural networks", "cnn", "rnn", "lstm", "transformers"],
+      "hours": 45,
+      "steps": [
+        "Take fast.ai Practical Deep Learning or the DeepLearning.AI Deep Learning Specialization.",
+        "Train an image or text classifier from scratch, then fine-tune a pretrained model.",
+        "Track experiments (loss curves, confusion matrix) and write what you would try next."
+      ],
+      "project": "Image classifier with transfer learning and an error-analysis section."
+    },
+    "NumPy": {
+      "aliases": ["numpy", "scipy"],
+      "hours": 10,
+      "steps": [
+        "Work through the official NumPy quickstart (arrays, broadcasting, vectorisation).",
+        "Re-implement linear regression with gradient descent using only NumPy.",
+        "Benchmark a Python loop against its vectorised NumPy version."
+      ],
+      "project": "From-scratch linear/logistic regression with NumPy."
+    },
+    "Scikit-learn": {
+      "aliases": ["scikit-learn", "scikit learn", "sklearn"],
+      "hours": 20,
+      "steps": [
+        "Complete the scikit-learn 'Getting Started' guide and pipeline tutorial.",
+        "Compare 3 models with cross-validation and tune one with GridSearchCV.",
+        "Wrap preprocessing + model in a Pipeline and save it with joblib."
+      ],
+      "project": "Churn-prediction pipeline with cross-validated model comparison."
+    },
+    "PyTorch": {
+      "aliases": ["pytorch", "torch"],
+      "hours": 25,
+      "steps": [
+        "Follow the official PyTorch 60-minute blitz.",
+        "Write your own training loop (dataset, dataloader, optimiser, validation).",
+        "Reproduce a small paper or tutorial result and log it with TensorBoard."
+      ],
+      "project": "Custom PyTorch training loop for a text or image classifier."
+    },
+    "TensorFlow": {
+      "aliases": ["tensorflow", "keras"],
+      "hours": 25,
+      "steps": [
+        "Complete the TensorFlow beginner tutorials (Keras Sequential and Functional APIs).",
+        "Train and export a model, then reload it for inference.",
+        "Add callbacks (early stopping, checkpoints) and compare runs."
+      ],
+      "project": "Keras model with callbacks, exported for inference."
+    },
+    "NLP": {
+      "aliases": ["nlp", "natural language processing", "text mining", "sentiment analysis", "hugging face", "huggingface", "spacy", "nltk"],
+      "hours": 30,
+      "steps": [
+        "Take the Hugging Face NLP course chapters 1-4.",
+        "Build a text classifier (TF-IDF baseline, then a fine-tuned transformer).",
+        "Compare both approaches and report where each one fails."
+      ],
+      "project": "Sentiment or topic classifier comparing TF-IDF and a transformer."
+    },
+    "Docker": {
+      "aliases": ["docker", "containers", "containerization", "containerisation", "docker-compose"],
+      "hours": 12,
+      "steps": [
+        "Do Docker's official 'Get Started' guide (images, containers, volumes).",
+        "Containerise one of your existing projects with a Dockerfile.",
+        "Add docker-compose to run the app together with its database."
+      ],
+      "project": "Dockerised app + database with a one-command docker-compose up."
+    },
+    "MLOps": {
+      "aliases": ["mlops", "mlflow", "model deployment", "model serving", "kubeflow", "dvc"],
+      "hours": 25,
+      "steps": [
+        "Learn the ML lifecycle: tracking, packaging, serving, monitoring (MLflow docs).",
+        "Track experiments with MLflow and register the best model.",
+        "Serve the model through a FastAPI endpoint inside a Docker container."
+      ],
+      "project": "Model served via FastAPI + Docker with MLflow experiment tracking."
+    },
+    "HTML": {
+      "aliases": ["html", "html5"],
+      "hours": 8,
+      "steps": [
+        "Complete freeCodeCamp's Responsive Web Design certification (HTML section).",
+        "Practise semantic tags, forms and accessibility attributes (alt text, labels, ARIA).",
+        "Recreate a landing page from a screenshot using only semantic HTML."
+      ],
+      "project": "Accessible multi-section landing page in semantic HTML."
+    },
+    "CSS": {
+      "aliases": ["css", "css3", "flexbox", "css grid", "sass", "scss"],
+      "hours": 15,
+      "steps": [
+        "Learn the box model, Flexbox and Grid (Flexbox Froggy and CSS Grid Garden are quick wins).",
+        "Rebuild a real website's layout without a framework.",
+        "Add a dark mode with CSS variables and prefers-color-scheme."
+      ],
+      "project": "Pixel-matched clone of a well-known landing page with dark mode."
+    },
+    "JavaScript": {
+      "aliases": ["javascript", "js", "es6", "ecmascript", "vanilla js"],
+      "hours": 40,
+      "steps": [
+        "Complete javascript.info 'The Modern JavaScript Tutorial' (parts 1-2).",
+        "Build 3 DOM mini-apps (to-do list, quiz, weather widget using fetch).",
+        "Learn async/await and error handling by consuming a public API."
+      ],
+      "project": "Weather or movie-search app using a public API with proper error states."
+    },
+    "React": {
+      "aliases": ["react", "react.js", "reactjs", "next.js", "nextjs", "redux"],
+      "hours": 35,
+      "steps": [
+        "Complete the official react.dev 'Learn' tutorial (components, state, effects).",
+        "Build a CRUD app with hooks and component composition, then deploy it (Vercel/Netlify).",
+        "Add routing, a data-fetching layer and loading/error states."
+      ],
+      "project": "Deployed CRUD dashboard in React with routing and API integration."
+    },
+    "REST APIs": {
+      "aliases": ["rest api", "rest apis", "restful", "restful api", "restful apis", "fastapi", "flask", "django rest", "openapi", "swagger", "graphql"],
+      "hours": 20,
+      "steps": [
+        "Learn REST conventions: resources, verbs, status codes, pagination, idempotency.",
+        "Build a CRUD API with FastAPI/Flask or Express, with validation and error handling.",
+        "Document it with OpenAPI/Swagger and test it with Postman or curl."
+      ],
+      "project": "CRUD REST API with validation, pagination and Swagger docs."
+    },
+    "Responsive Design": {
+      "aliases": ["responsive design", "responsive web design", "mobile-first", "media queries", "bootstrap", "material ui"],
+      "hours": 8,
+      "steps": [
+        "Learn mobile-first design and media queries (web.dev Responsive Design course).",
+        "Make an existing project usable at 360px, 768px and 1280px widths.",
+        "Test with browser dev-tools device mode and Lighthouse; fix every tap-target warning."
+      ],
+      "project": "Fully responsive portfolio site scoring 90+ on Lighthouse."
+    },
+    "TypeScript": {
+      "aliases": ["typescript"],
+      "hours": 15,
+      "steps": [
+        "Work through the TypeScript Handbook (types, interfaces, generics, narrowing).",
+        "Migrate one of your JavaScript projects to TypeScript with strict mode on.",
+        "Type your API responses end-to-end and remove every 'any'."
+      ],
+      "project": "Strict-mode TypeScript migration of an existing project."
+    },
+    "Node.js": {
+      "aliases": ["node.js", "nodejs", "node js", "express", "express.js", "expressjs", "nestjs"],
+      "hours": 20,
+      "steps": [
+        "Complete the Node.js official 'Learn' guides (modules, async, streams).",
+        "Build an Express/Fastify API connected to a database.",
+        "Add authentication (JWT) and request validation."
+      ],
+      "project": "Authenticated Express API with a database and tests."
+    },
+    "Tailwind CSS": {
+      "aliases": ["tailwind", "tailwind css", "tailwindcss"],
+      "hours": 6,
+      "steps": [
+        "Skim the Tailwind docs core concepts (utility-first, responsive prefixes, dark mode).",
+        "Rebuild a page from one of your projects using only Tailwind utilities.",
+        "Extract repeated patterns into components rather than long class strings."
+      ],
+      "project": "Component library (buttons, cards, modals) styled with Tailwind."
+    },
+    "Testing": {
+      "aliases": ["testing", "unit testing", "unit tests", "pytest", "jest", "junit", "test-driven development", "tdd", "cypress", "selenium", "playwright"],
+      "hours": 12,
+      "steps": [
+        "Learn the testing pyramid and write unit tests for pure functions (pytest / Jest).",
+        "Reach 70%+ coverage on one existing project and run tests in GitHub Actions.",
+        "Practise TDD on one new feature: write the failing test first."
+      ],
+      "project": "Add a CI pipeline with unit tests and a coverage badge to a project."
+    },
+    "Figma": {
+      "aliases": ["figma", "adobe xd", "sketch", "ui/ux", "ux design", "wireframing", "prototyping"],
+      "hours": 8,
+      "steps": [
+        "Follow Figma's official beginner tutorials (frames, auto-layout, components).",
+        "Design a 3-screen mobile app flow and share a clickable prototype.",
+        "Hand off the design by building one screen in code."
+      ],
+      "project": "Clickable 3-screen prototype built and then implemented in code."
+    },
+    "PostgreSQL": {
+      "aliases": ["postgresql", "postgres", "psql", "pgadmin"],
+      "hours": 20,
+      "steps": [
+        "Install PostgreSQL locally and learn schemas, indexes, constraints and transactions.",
+        "Design a normalised schema (3NF) for a small product and write migrations.",
+        "Use EXPLAIN ANALYZE to speed up one slow query with an index."
+      ],
+      "project": "Normalised schema + migrations + indexed queries for a booking system."
+    },
+    "Data Structures": {
+      "aliases": ["data structures", "algorithms", "dsa", "data structures and algorithms", "competitive programming", "leetcode"],
+      "hours": 60,
+      "steps": [
+        "Follow a structured path (NeetCode 150 or Striver's SDE sheet): arrays, hashing, trees, graphs, DP.",
+        "Solve 3 problems a week and write down the pattern behind each solution.",
+        "Do 2 timed mock interviews with a friend or Pramp."
+      ],
+      "project": "Personal 'patterns' notebook with 75+ solved and explained problems."
+    },
+    "Linux": {
+      "aliases": ["linux", "unix", "bash", "shell scripting", "ubuntu", "command line", "ssh"],
+      "hours": 12,
+      "steps": [
+        "Complete OverTheWire 'Bandit' to master the command line.",
+        "Learn permissions, processes, pipes, grep/sed/awk and cron.",
+        "Deploy a small app to a Linux VM and manage it over SSH."
+      ],
+      "project": "Deploy and monitor a small service on a Linux VM with a systemd unit."
+    },
+    "Redis": {
+      "aliases": ["redis", "memcached"],
+      "hours": 8,
+      "steps": [
+        "Complete the official Redis University 'RU101' (free).",
+        "Add a cache-aside layer to one of your APIs with TTLs.",
+        "Measure latency before and after caching."
+      ],
+      "project": "Cache layer for a REST API with latency benchmark."
+    },
+    "Microservices": {
+      "aliases": ["microservices", "microservice", "message queue", "kafka", "rabbitmq", "event-driven"],
+      "hours": 25,
+      "steps": [
+        "Read about service boundaries, API gateways and eventual consistency.",
+        "Split a small monolith into two services that communicate over HTTP or a queue.",
+        "Add health checks and structured logging to each service."
+      ],
+      "project": "Two-service order system communicating via RabbitMQ or HTTP."
+    },
+    "Cloud": {
+      "aliases": ["cloud", "aws", "azure", "gcp", "google cloud", "amazon web services", "lambda", "s3", "ec2"],
+      "hours": 25,
+      "steps": [
+        "Study for AWS Cloud Practitioner or Azure Fundamentals (free learning paths).",
+        "Deploy a containerised app to a free-tier service (EC2, App Runner, Cloud Run).",
+        "Add object storage (S3) and set up billing alerts."
+      ],
+      "project": "App deployed on a cloud free tier with storage and billing alerts."
+    },
+    "Git": {
+      "aliases": ["git", "github", "gitlab", "bitbucket", "version control", "git flow"],
+      "hours": 6,
+      "steps": [
+        "Learn branching, merging, rebasing and pull requests (GitHub Skills is free).",
+        "Contribute one small PR to an open-source repo (docs fixes count).",
+        "Keep commits small with meaningful messages across a full project."
+      ],
+      "project": "Open-source docs or bug-fix pull request merged upstream."
+    }
+  },
+  "job_descriptions": [
+    {
+      "id": "da-1",
+      "role": "Data Analyst",
+      "title": "Junior Data Analyst Intern",
+      "company": "RetailPulse Analytics",
+      "text": "Analyse sales and customer data using SQL and Excel. Build dashboards in Power BI or Tableau to track KPIs. Clean and prepare datasets with Python and pandas. Apply statistics and hypothesis testing to support business decisions and present insights to stakeholders."
+    },
+    {
+      "id": "da-2",
+      "role": "Data Analyst",
+      "title": "Business Intelligence Intern",
+      "company": "FinEdge Bank",
+      "text": "Support the reporting team by writing SQL queries, automating Excel reports and building interactive data visualisations. Perform data cleaning and run A/B tests for marketing campaigns. Communicate trends and recommendations clearly to non-technical teams."
+    },
+    {
+      "id": "da-3",
+      "role": "Data Analyst",
+      "title": "Product Analytics Intern",
+      "company": "StreamNest",
+      "text": "Explore user behaviour data with Python, pandas and SQL. Design experiments, measure retention and conversion, and visualise findings with matplotlib or Tableau. Strong statistics fundamentals and storytelling with data are essential."
+    },
+    {
+      "id": "ml-1",
+      "role": "ML Engineer",
+      "title": "Machine Learning Intern",
+      "company": "VisionForge AI",
+      "text": "Train and evaluate machine learning and deep learning models using Python, scikit-learn, PyTorch or TensorFlow. Prepare datasets with NumPy and pandas, run experiments, and document results. Apply statistics to validate models. Use Git for collaboration."
+    },
+    {
+      "id": "ml-2",
+      "role": "ML Engineer",
+      "title": "NLP Engineering Intern",
+      "company": "LinguaLabs",
+      "text": "Build natural language processing pipelines for text classification and sentiment analysis with Hugging Face transformers. Fine-tune neural network models, deploy them with Docker and FastAPI, and track experiments with MLflow."
+    },
+    {
+      "id": "ml-3",
+      "role": "ML Engineer",
+      "title": "MLOps Intern",
+      "company": "CloudMind",
+      "text": "Help productionise machine learning models: containerise with Docker, build CI/CD pipelines, monitor model drift and serve predictions through REST APIs. Python, Git, Linux and cloud experience (AWS) are valued along with scikit-learn basics."
+    },
+    {
+      "id": "wd-1",
+      "role": "Web Developer",
+      "title": "Frontend Developer Intern",
+      "company": "PixelCraft Studio",
+      "text": "Build responsive user interfaces with HTML, CSS and JavaScript using React. Consume REST APIs, write clean reusable components, and collaborate through Git and pull requests. Experience with Tailwind CSS and TypeScript is a plus."
+    },
+    {
+      "id": "wd-2",
+      "role": "Web Developer",
+      "title": "Full-Stack Web Intern",
+      "company": "LaunchPad Labs",
+      "text": "Develop features across the stack with React, Node.js and Express. Design REST APIs, work with SQL databases, write tests and ship responsive, accessible web pages. Git workflow and TypeScript knowledge expected."
+    },
+    {
+      "id": "wd-3",
+      "role": "Web Developer",
+      "title": "UI Engineer Intern",
+      "company": "BrightCart",
+      "text": "Turn Figma designs into pixel-perfect, mobile-first responsive pages using HTML, CSS, Tailwind and JavaScript. Improve performance and accessibility, and write component tests."
+    },
+    {
+      "id": "bd-1",
+      "role": "Backend Developer",
+      "title": "Backend Engineering Intern",
+      "company": "Payroute",
+      "text": "Design and build REST APIs in Python with PostgreSQL and SQL. Apply data structures and algorithms to write efficient code, use Git, work on Linux servers and write unit tests. Docker and Redis experience is a plus."
+    },
+    {
+      "id": "bd-2",
+      "role": "Backend Developer",
+      "title": "Platform Services Intern",
+      "company": "ScaleGrid",
+      "text": "Contribute to microservices written in Node.js or Python, integrate message queues, optimise database queries and deploy to cloud infrastructure with Docker. Strong fundamentals in data structures, REST API design and Linux are required."
+    },
+    {
+      "id": "bd-3",
+      "role": "Backend Developer",
+      "title": "API Developer Intern",
+      "company": "ShopSphere",
+      "text": "Build and document scalable APIs, design relational schemas in PostgreSQL, add caching with Redis, and write automated tests. Version control with Git and clean code practices are expected."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+.next/
+out/
+build/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local application data and secrets
+data/*.db
+data/*.db-journal
+.streamlit/secrets.toml
